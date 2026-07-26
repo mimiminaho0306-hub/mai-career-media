@@ -53,6 +53,21 @@
       fallback: 'https://miidas.jp/',
       label: 'ミイダス（無料で市場価値を診断）',
       programId: ''
+    },
+    // 【AI×キャリア・高単価】生成AIスクールの無料相談/無料説明会（リード獲得）
+    // NT10: 導線の終点は"無料相談まで"・受講料/給付金/返金を記事で開示・契約を煽らない
+    aischool: {
+      url: '',                                   // ← A8/アクセストレードのアフィリリンクをここに
+      fallback: 'https://shift-ai.co.jp/',
+      label: '生成AIスクール（無料相談・無料説明会）',
+      programId: ''
+    },
+    // 【AI×キャリア・低単価】AIツールのサブスク/登録（低ハードルの入口・煽り不要でクリーン）
+    aitool: {
+      url: '',
+      fallback: 'https://openai.com/chatgpt/',
+      label: 'AIツール（まず触ってみる）',
+      programId: ''
     }
   };
   /* ↑ fallback URLは提携前の仮リンク。実在の広告主・最新URLはA8管理画面で確認して差し替える。
