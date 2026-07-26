@@ -39,11 +39,19 @@
       label: '識学キャリア（若年層／新規面談）',
       programId: ''
     },
-    // 未経験OK・相談だけで成果＝A8「フミダス」無料転職相談 約8,000〜10,000円
+    // フリーランス/未経験の相談窓口（審査ありの中単価枠・任意）
     freelance: {
       url: '',
-      fallback: 'https://fumidasu.jp/',
-      label: 'フミダス（未経験OK／無料転職相談）',
+      fallback: 'https://doda.jp/',
+      label: 'フリーランス・未経験の相談窓口',
+      programId: ''
+    },
+    // 低単価・低ハードルの入口＝ミイダス（無料で市場価値診断・A8掲載確認済み）
+    // 「まだ相談は重い人」を拾う軽い代替CTA。高単価(daini)と役割が違うので併用可
+    miidas: {
+      url: '',                                   // ← A8のアフィリリンク（ミイダス）をここに
+      fallback: 'https://miidas.jp/',
+      label: 'ミイダス（無料で市場価値を診断）',
       programId: ''
     }
   };
