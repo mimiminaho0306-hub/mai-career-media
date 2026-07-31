@@ -34,12 +34,20 @@
       programId: 's00000018427001005000'
     },
     // マーケ/クリエイティブ職の人材紹介＝★株式会社マスメディアン 提携承認済み(2026-07-30)
-    // “見られる仕事”出身と好相性。新規面談7,000円。※現状このスロットを使うCTAは未設置＝記事に data-offer="creative" を置くと有効化
+    // “見られる仕事”出身と好相性。新規面談7,000円。記事に data-offer="creative" を置くと有効化
     creative: {
       url: 'https://px.a8.net/svt/ejp?a8mat=4B8COT+14HJGI+3JN0+5YJRM',  // ★マスメディアン 承認済み(2026-07-30)・掲載サイト=まい転職アフィ
       fallback: 'https://www.massmedian.co.jp/',
       label: 'マスメディアン（マーケ・クリエイティブ職の転職）',
       programId: 's00000016542001'
+    },
+    // 新卒・既卒・27卒の就活サポート＝★株式会社ウズウズ【UZUZ新卒】提携承認済み(2026-07-27)
+    // 新規無料相談15,000円（高単価）。記事に data-offer="shinsotsu" を置くと有効化
+    shinsotsu: {
+      url: 'https://px.a8.net/svt/ejp?a8mat=4B89KU+DBVFWI+33T0+1ZG8B6',  // ★UZUZ新卒 承認済み(2026-07-27)・掲載サイト=まい転職アフィ
+      fallback: 'https://uzuz.jp/',
+      label: 'UZUZ新卒（新卒・既卒・27卒の無料就活相談）',
+      programId: 's00000014490012'
     },
     // フリーランス/未経験の相談窓口（審査ありの中単価枠・任意）
     freelance: {
