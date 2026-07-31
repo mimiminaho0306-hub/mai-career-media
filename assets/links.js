@@ -33,12 +33,13 @@
       label: 'ネオキャリア（第二新卒エージェントneo／20代・既卒・フリーター）',
       programId: 's00000018427001005000'
     },
-    // 実力主義企業への若年層転職＝A8「識学キャリア」新規面談 約25,000円
+    // マーケ/クリエイティブ職の人材紹介＝★株式会社マスメディアン 提携承認済み(2026-07-30)
+    // “見られる仕事”出身と好相性。新規面談7,000円。※現状このスロットを使うCTAは未設置＝記事に data-offer="creative" を置くと有効化
     creative: {
-      url: '',
-      fallback: 'https://shikigaku-career.jp/',
-      label: '識学キャリア（若年層／新規面談）',
-      programId: ''
+      url: 'https://px.a8.net/svt/ejp?a8mat=4B8COT+14HJGI+3JN0+5YJRM',  // ★マスメディアン 承認済み(2026-07-30)・掲載サイト=まい転職アフィ
+      fallback: 'https://www.massmedian.co.jp/',
+      label: 'マスメディアン（マーケ・クリエイティブ職の転職）',
+      programId: 's00000016542001'
     },
     // フリーランス/未経験の相談窓口（審査ありの中単価枠・任意）
     freelance: {
@@ -81,10 +82,10 @@
     // 【副業・低〜中単価】副業を"始める入口"＝クラウドソーシング登録/スキルシェア/女性向けスキルスクール
     // NT10: 「誰でも月◯万」info商材・高額塾・投資/FX商材・ネットワークビジネスは不採用（搾取/煽りNG）
     fukugyo: {
-      url: '',
-      fallback: 'https://crowdworks.jp/',
-      label: '副業の入口（クラウドソーシング/スキルシェア/スクール無料体験）',
-      programId: ''
+      url: 'https://px.a8.net/svt/ejp?a8mat=4B8DGQ+3BO6WY+2PEO+5YJRM',  // ★ココナラ(出品) 承認済み(2026-07-31)・掲載サイト=まい転職アフィ
+      fallback: 'https://coconala.com/',
+      label: '副業の入口（ココナラ／自分のスキルを出品して売る）',
+      programId: 's00000012624001'
     }
   };
   /* ↑ fallback URLは提携前の仮リンク。実在の広告主・最新URLはA8管理画面で確認して差し替える。
