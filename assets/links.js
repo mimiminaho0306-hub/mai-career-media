@@ -110,6 +110,26 @@
       fallback: 'https://crowdtech.jp/',
       label: 'クラウドワークステック（フリーランスの案件・エージェント）',
       programId: 's00000012521006'
+    },
+    // 【恋愛・占いピラー用／験担ぎ・整える文脈限定・NT10】占い採用GO(2026-08-03)・申請中→承認出次第 url を差込
+    // 恋愛/占い受け皿ページ専用。キャリアサイトのnavには出さない。data-offer="uranai_light"/"uranai_chat"/"uranai_deep"
+    uranai_light: {   // 無料/低摩擦（無料鑑定・LINE）＝電話占いマディア(確定100%)/RAYSEE 等・承認後に差込
+      url: '',
+      fallback: 'https://d-mediamix.co.jp/',
+      label: '占い（まず無料で5分・迷いを整理する）',
+      programId: ''
+    },
+    uranai_chat: {    // 文字で相談＝チャット占いブリランテ(確定100%) 等・承認後に差込
+      url: '',
+      fallback: 'https://coconala.com/pages/uranai',
+      label: '占い（文字でじっくり相談）',
+      programId: ''
+    },
+    uranai_deep: {    // じっくり本格＝電話占いヴェルニ 等・承認後に差込
+      url: '',
+      fallback: 'https://vernis.co.jp/',
+      label: '占い（じっくり本格鑑定）',
+      programId: ''
     }
   };
   /* ↑ fallback URLは提携前の仮リンク。実在の広告主・最新URLはA8管理画面で確認して差し替える。
