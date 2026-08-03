@@ -102,6 +102,14 @@
       fallback: 'https://kosmo-c.com/',
       label: 'KOSMO（LINEで気軽にキャリア相談）',
       programId: 's00000024598002'
+    },
+    // フリーランス向けエージェント・求人紹介 クラウドワークステック 提携承認済み(2026-08-03)
+    // 「就職せずフリーランスを続けるなら案件・単価を上げる」正直な選択肢。data-offer="freelance_agent"
+    freelance_agent: {
+      url: 'https://px.a8.net/svt/ejp?a8mat=4B8DGQ+2MNZIA+2OM2+ZQ80I',  // ★クラウドワークステック 承認済み(2026-08-03)・掲載サイト=まい転職アフィ
+      fallback: 'https://crowdtech.jp/',
+      label: 'クラウドワークステック（フリーランスの案件・エージェント）',
+      programId: 's00000012521006'
     }
   };
   /* ↑ fallback URLは提携前の仮リンク。実在の広告主・最新URLはA8管理画面で確認して差し替える。
