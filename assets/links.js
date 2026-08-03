@@ -94,6 +94,14 @@
       fallback: 'https://coconala.com/',
       label: '副業の入口（ココナラ／自分のスキルを出品して売る）',
       programId: 's00000012624001'
+    },
+    // 【軽い入口・LINEで無料相談】就職・転職サポート KOSMO 提携承認済み(2026-08-03)
+    // 成果=LINE友だち追加(摩擦が最小)300円。無料面談15,000円の手前に置く"軽い一歩"。data-offer="line_career"
+    line_career: {
+      url: 'https://px.a8.net/svt/ejp?a8mat=4B9W9C+2QU0QQ+59SS+BWVTE',  // ★KOSMO 承認済み(2026-08-03)・LINE友だち追加300円・掲載サイト=まい転職アフィ
+      fallback: 'https://kosmo-c.com/',
+      label: 'KOSMO（LINEで気軽にキャリア相談）',
+      programId: 's00000024598002'
     }
   };
   /* ↑ fallback URLは提携前の仮リンク。実在の広告主・最新URLはA8管理画面で確認して差し替える。
