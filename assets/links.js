@@ -130,6 +130,14 @@
       fallback: 'https://vernis.co.jp/',
       label: '占い（じっくり本格鑑定）',
       programId: ''
+    },
+    // キャリアコーチング（資格コーチ×キャリアプランニング）キャリート 提携承認済み(2026-08-04)
+    // shiryo(キャリナビ)と並ぶ"じっくり整理"の第2選択肢。data-offer="coaching"
+    coaching: {
+      url: 'https://px.a8.net/svt/ejp?a8mat=4B8DGQ+37I5OI+44M0+NTJWY',  // ★キャリート 承認済み(2026-08-04)・掲載サイト=まい転職アフィ
+      fallback: 'https://careet.jp/',
+      label: 'キャリート（資格コーチとキャリアを整理）',
+      programId: 's00000019260004'
     }
   };
   /* ↑ fallback URLは提携前の仮リンク。実在の広告主・最新URLはA8管理画面で確認して差し替える。
