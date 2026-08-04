@@ -119,11 +119,11 @@
       label: '占い（まず無料で5分・迷いを整理する）',
       programId: ''
     },
-    uranai_chat: {    // 文字で相談＝チャット占いブリランテ(確定100%) 等・承認後に差込
-      url: '',
-      fallback: 'https://coconala.com/pages/uranai',
-      label: '占い（文字でじっくり相談）',
-      programId: ''
+    uranai_chat: {    // 文字で相談＝★ミラーメール占い(チャット) 承認済み(2026-08-03)・掲載サイト=まい転職アフィ
+      url: 'https://px.a8.net/svt/ejp?a8mat=4B9X1C+45FV5U+4PWE+BWVTE',
+      fallback: 'https://miror.jp/',
+      label: '占い（文字でじっくり相談・ミラーメール占い）',
+      programId: 's00000022019002'
     },
     uranai_deep: {    // じっくり本格＝電話占いヴェルニ 等・承認後に差込
       url: '',
