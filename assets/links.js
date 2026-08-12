@@ -67,10 +67,10 @@
     // 【AI×キャリア・高単価】生成AIスクールの無料相談/無料説明会（リード獲得）
     // NT10: 導線の終点は"無料相談まで"・受講料/給付金/返金を記事で開示・契約を煽らない
     aischool: {
-      url: '',                                   // ← A8/アクセストレードのアフィリリンクをここに
-      fallback: 'https://shift-ai.co.jp/',
-      label: '生成AIスクール（無料相談・無料説明会）',
-      programId: ''
+      url: 'https://px.a8.net/svt/ejp?a8mat=4B9X1C+3MZFEQ+5OME+5ZMCH',  // ★SAKIYOMI 承認済み(2026-08-10)・新規LINE友達追加1,200円・確定率75%・掲載サイト=まい転職アフィ(wid=003)
+      fallback: 'https://sakiyomi.co.jp/',
+      label: 'SAKIYOMI（SNS×AIを仕事にするスクール・LINE友達追加）',
+      programId: 's00000026519001'
     },
     // 【AI×キャリア・低単価】AIツールのサブスク/登録（低ハードルの入口・煽り不要でクリーン）
     aitool: {
