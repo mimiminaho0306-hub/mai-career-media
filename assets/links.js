@@ -152,6 +152,35 @@
   /* ------------------------------------------------------------------
      ③ 以下は触らなくて大丈夫です
      ------------------------------------------------------------------ */
+  /* --- A8 パラメータ計測（id1=流入元の記事 / id2=CTAの位置） -------------
+     仕様（A8公式）: 広告リンクに &id1=値 を付ける。半角英数字のみ・50バイト以内。
+     「?」「&」は使用不可。個人情報は入れない。Amazon/楽天は非対応。
+     使い方: note記事のリンクに ?src=0815a を付ける → ここで id1=0815a になる。
+     ------------------------------------------------------------------- */
+  function alnum(v, max) {
+    v = String(v || '').replace(/[^0-9A-Za-z]/g, '');
+    return v.slice(0, max || 40);
+  }
+  function srcParam() {
+    try {
+      var m = location.search.match(/[?&]src=([^&]*)/);
+      if (m) {
+        var v = alnum(decodeURIComponent(m[1]), 20);
+        if (v) { try { sessionStorage.setItem('mcm_src', v); } catch (e) {} return v; }
+      }
+      var st = sessionStorage.getItem('mcm_src');
+      if (st) return st;
+    } catch (e) {}
+    return 'direct';
+  }
+  function withParams(url, el) {
+    if (!url || url.indexOf('px.a8.net') === -1) return url;   // A8リンク以外は触らない
+    if (url.indexOf('id1=') > -1) return url;                  // 二重付与を防ぐ
+    var id1 = srcParam();                                      // 流入元の記事
+    var id2 = alnum(el.getAttribute('data-cta-pos'), 40) || 'unknown';  // CTAの位置
+    return url + '&id1=' + id1 + '&id2=' + id2;
+  }
+
   function apply() {
     var links = document.querySelectorAll('a[data-offer]');
     Array.prototype.forEach.call(links, function (a) {
@@ -159,7 +188,7 @@
       var offer = OFFERS[key];
       if (!offer) return;
       var isAffiliate = !!offer.url;
-      var href = isAffiliate ? offer.url : offer.fallback;
+      var href = isAffiliate ? withParams(offer.url, a) : offer.fallback;
       a.setAttribute('href', href);
       a.setAttribute('target', '_blank');
       a.setAttribute('rel', isAffiliate
