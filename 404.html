@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ページが見つかりません｜ステージの次へ</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/assets/style.css">
+<script>
+// リンクの末尾に余計な文字が付いてしまったURLを、正しいページへ自動で戻す。
+// 例: /shorui.html%EF%BF%BC%E2%96%A0 → /shorui.html
+(function () {
+  var known = ["shorui","agent-erabi","ai-fukugyo","ai-career","fukugyo","kokoro",
+               "freelance-yametai","entertainment-kyujin","agent-hikaku","about","contact","index"];
+  var path = "";
+  try { path = decodeURIComponent(location.pathname); } catch (e) { path = location.pathname; }
+  for (var i = 0; i < known.length; i++) {
+    if (path.indexOf("/" + known[i] + ".html") === 0) {
+      location.replace("/" + known[i] + ".html" + location.search);
+      return;
+    }
+  }
+})();
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap"><a class="brand" href="/">ステージの次へ</a></div>
+</header>
+<main class="wrap">
+  <h1>ページが見つかりませんでした</h1>
+  <p>URLが途中で切れているか、変わった可能性があります。お探しの内容は、たぶんこのあたりです。</p>
+  <ul>
+    <li><a href="/shorui.html">職務経歴書・自己PRの書き方と、無料で添削してもらえる窓口</a></li>
+    <li><a href="/agent-erabi.html">転職エージェント・キャリア相談の選び方（無料相談の窓口つき）</a></li>
+    <li><a href="/ai-fukugyo.html">AIを仕事にする・副業の第一歩</a></li>
+    <li><a href="/kokoro.html">決められない夜の、頭の整理室</a></li>
+    <li><a href="/">トップページ</a></li>
+  </ul>
+  <p><small>※このサイトには広告（アフィリエイト）を含むリンクがあります。</small></p>
+</main>
+<footer class="site-footer"><div class="wrap"><small>© ステージの次へ</small></div></footer>
+</body>
+</html>
