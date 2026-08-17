@@ -14,7 +14,8 @@
        - url が空      → 公式サイトへ / rel="noopener noreferrer"
        - url を設定済み → アフィリリンクへ / rel="sponsored noopener noreferrer"
 
-   ■ クリックは自動で計測されます（GA4）。
+   ■ 計測: Vercel Analytics（全ページに script を設置済み）。
+     ※ Vercelダッシュボードで Analytics を有効化しないとデータは溜まりません。
    =================================================================== */
 
 (function () {
